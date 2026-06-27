@@ -18,3 +18,4 @@
 // counters; let the tool assign the next one.
 //
 // ----- patches below this line -----
+1    ror-2026.06.27.zip

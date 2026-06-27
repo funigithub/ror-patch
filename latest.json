@@ -1,17 +1,17 @@
-﻿{
+{
   "schema": 1,
   "server": "Risk of Ragnarok",
-  "updated": "2026-06-27T00:00:00Z",
+  "updated": "2026-06-27T19:49:44Z",
   "baseline_counter": 0,
   "latest": {
-    "version": null,
-    "counter": 0,
-    "filename": null,
-    "url": null,
-    "sha256": null,
-    "size": 0,
-    "kind": null,
-    "published": null
+    "version": "2026.06.27",
+    "counter": 1,
+    "filename": "ror-2026.06.27.zip",
+    "url": "https://funigithub.github.io/ror-patch/patch/main/ror-2026.06.27.zip",
+    "sha256": "fa9f054426d1d6efe0bd7d4dd6023f59ed78d870d698757540272bc3f32c108e",
+    "size": 247394,
+    "kind": "patch",
+    "published": "2026-06-27T19:49:44Z"
   },
   "full_client": {
     "version": null,
@@ -25,5 +25,16 @@
     "sha256": null,
     "size": 0
   },
-  "patches": []
+  "patches": [
+    {
+      "version": "2026.06.27",
+      "counter": 1,
+      "filename": "ror-2026.06.27.zip",
+      "url": "https://funigithub.github.io/ror-patch/patch/main/ror-2026.06.27.zip",
+      "sha256": "fa9f054426d1d6efe0bd7d4dd6023f59ed78d870d698757540272bc3f32c108e",
+      "size": 247394,
+      "kind": "patch",
+      "published": "2026-06-27T19:49:44Z"
+    }
+  ]
 }
