@@ -1,0 +1,23 @@
+:root{
+  --bg:#0e1014; --panel:#171a21; --fg:#e7e7ea; --muted:#9aa0aa;
+  --accent:#c8a24a; --up:#5fae5f; --down:#c85a5a; --link:#d8b85f;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:16px/1.5 "Segoe UI",Tahoma,system-ui,sans-serif}
+a{color:var(--link)}
+header{padding:32px 24px 16px;text-align:center;
+  border-bottom:1px solid #23262e;background:var(--panel)}
+header h1{margin:0;font-size:34px;letter-spacing:.5px;color:var(--accent)}
+.status{margin:8px 0 0;color:var(--muted)}
+.status.up{color:var(--up)} .status.down{color:var(--down)}
+main{max-width:860px;margin:0 auto;padding:24px}
+section{background:var(--panel);border:1px solid #23262e;border-radius:10px;
+  padding:18px 20px;margin:0 0 18px}
+section h2{margin:0 0 10px;font-size:20px;color:var(--accent)}
+ul{margin:0;padding-left:20px}
+li{margin:0 0 8px}
+.muted{color:var(--muted);font-size:14px}
+footer{max-width:860px;margin:0 auto;padding:0 24px 40px;
+  color:var(--muted);font-size:13px;text-align:center}
+footer a{color:var(--muted)}

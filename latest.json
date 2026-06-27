@@ -1,0 +1,29 @@
+﻿{
+  "schema": 1,
+  "server": "Risk of Ragnarok",
+  "updated": "2026-06-27T00:00:00Z",
+  "baseline_counter": 0,
+  "latest": {
+    "version": null,
+    "counter": 0,
+    "filename": null,
+    "url": null,
+    "sha256": null,
+    "size": 0,
+    "kind": null,
+    "published": null
+  },
+  "full_client": {
+    "version": null,
+    "url": null,
+    "sha256": null,
+    "size": 0
+  },
+  "launcher": {
+    "version": null,
+    "url": null,
+    "sha256": null,
+    "size": 0
+  },
+  "patches": []
+}

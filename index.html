@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Risk of Ragnarok</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header>
+  <h1>Risk of Ragnarok</h1>
+  <p id="status" class="status">Checking server status&hellip;</p>
+</header>
+
+<main>
+  <section id="download">
+    <h2>Play</h2>
+    <p>Download the launcher, unzip it into your Risk of Ragnarok folder, and run it.
+       It will keep your client up to date and launch the game.</p>
+    <p id="full-client"></p>
+  </section>
+
+  <section id="news">
+    <h2>News</h2>
+    <ul id="news-list"><li>Loading&hellip;</li></ul>
+  </section>
+
+  <section id="patches">
+    <h2>Latest patch</h2>
+    <p id="latest-patch">Loading&hellip;</p>
+  </section>
+</main>
+
+<footer>
+  <p>Patch metadata: <a href="patch/main/patch_main.txt">patch list</a> &middot;
+     <a href="latest.json">latest.json</a> &middot;
+     <a href="news.json">news.json</a> &middot;
+     <a href="server-status.json">server-status.json</a></p>
+</footer>
+
+<script>
+// Lightweight, dependency-free. Reads the same JSON the launcher uses.
+async function j(u){ const r = await fetch(u + '?t=' + Date.now()); return r.json(); }
+
+(async () => {
+  try {
+    const s = await j('server-status.json');
+    const el = document.getElementById('status');
+    el.textContent = s.maintenance ? ('Maintenance: ' + (s.message||'')) : (s.message || 'Online');
+    el.classList.add(s.maintenance ? 'down' : 'up');
+  } catch(e){ document.getElementById('status').textContent = 'Status unavailable'; }
+
+  try {
+    const n = await j('news.json');
+    const ul = document.getElementById('news-list');
+    ul.innerHTML = '';
+    (n.items||[]).forEach(it => {
+      const li = document.createElement('li');
+      li.innerHTML = '<strong>' + (it.date||'') + '</strong> &mdash; ' +
+        (it.url ? '<a href="'+it.url+'">'+it.title+'</a>' : it.title) +
+        (it.body ? '<br><span class="muted">'+it.body+'</span>' : '');
+      ul.appendChild(li);
+    });
+    if(!ul.children.length) ul.innerHTML = '<li class="muted">No news yet.</li>';
+  } catch(e){ document.getElementById('news-list').innerHTML = '<li class="muted">News unavailable.</li>'; }
+
+  try {
+    const l = await j('latest.json');
+    const lp = document.getElementById('latest-patch');
+    if(l.latest && l.latest.version){
+      lp.innerHTML = 'Version <strong>'+l.latest.version+'</strong> (patch #'+l.latest.counter+')'
+        + (l.latest.url ? ' &middot; <a href="'+l.latest.url+'">download</a>' : '')
+        + '<br><span class="muted">sha256 '+(l.latest.sha256||'').slice(0,16)+'&hellip;</span>';
+    } else { lp.textContent = 'No patches published yet.'; }
+    const fc = document.getElementById('full-client');
+    if(l.full_client && l.full_client.url){
+      fc.innerHTML = 'Full client (repair): <a href="'+l.full_client.url+'">'+
+        (l.full_client.version||'download')+'</a>';
+    }
+  } catch(e){ document.getElementById('latest-patch').textContent = 'Patch info unavailable.'; }
+})();
+</script>
+</body>
+</html>

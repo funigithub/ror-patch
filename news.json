@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "server": "Risk of Ragnarok",
+  "updated": "2026-06-27T00:00:00Z",
+  "items": [
+    {
+      "id": "welcome",
+      "date": "2026-06-27",
+      "title": "Patcher online",
+      "body": "The Risk of Ragnarok launcher is now live. Updates will appear here.",
+      "url": "https://funigithub.github.io/ror-patch/"
+    }
+  ]
+}

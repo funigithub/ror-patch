@@ -1,0 +1,20 @@
+// Risk of Ragnarok - Elurair patch list (WebListVer=0)
+//
+// Format per line:  <counter>    <patch file name>
+//   - counter: monotonic increasing integer, never reused/reordered
+//   - lines starting with // are comments (ignored by Elurair)
+//   - ASCII only
+//
+// Elurair downloads each file whose counter is greater than the
+// counter stored in the player's local main.inf, applies it (ZIP is
+// unpacked into the RO folder), then records the new highest counter.
+//
+// Published to GitHub Pages at:
+//   https://funigithub.github.io/ror-patch/patch/main/patch_main.txt
+// Payloads resolve to:
+//   https://funigithub.github.io/ror-patch/patch/main/<name>
+//
+// Managed by tools/release_patch (append-only). Do not hand-edit
+// counters; let the tool assign the next one.
+//
+// ----- patches below this line -----
