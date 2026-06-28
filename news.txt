@@ -1,0 +1,10 @@
+Risk of Ragnarok - Patch Notes
+
+[2026.06.27] Crystal Streak
+- The Basic Skill is now shown as "Crystal Streak" with a description of
+  how the streak works: +3% ATK/MATK per level, bonus zeny and rare
+  material drops per kill, and a revive chance. It resets at the inn or
+  on death.
+
+Edit news.txt in the ror-patch repo to update this panel - it is read
+live by the in-client patcher on startup. No client rebuild needed.
