@@ -19,3 +19,6 @@
 //
 // ----- patches below this line -----
 1    ror-2026.06.27.zip
+2    ror-2026.06.29.zip
+3    ror-2026.06.29.1.zip
+4    ror-2026.06.29.2.zip

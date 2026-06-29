@@ -1,17 +1,17 @@
 {
   "schema": 1,
   "server": "Risk of Ragnarok",
-  "updated": "2026-06-27T19:49:44Z",
+  "updated": "2026-06-29T18:56:01Z",
   "baseline_counter": 0,
   "latest": {
-    "version": "2026.06.27",
-    "counter": 1,
-    "filename": "ror-2026.06.27.zip",
-    "url": "https://funigithub.github.io/ror-patch/patch/main/ror-2026.06.27.zip",
-    "sha256": "fa9f054426d1d6efe0bd7d4dd6023f59ed78d870d698757540272bc3f32c108e",
-    "size": 247394,
+    "version": "2026.06.29.2",
+    "counter": 4,
+    "filename": "ror-2026.06.29.2.zip",
+    "url": "https://funigithub.github.io/ror-patch/patch/main/ror-2026.06.29.2.zip",
+    "sha256": "d16718850ef40ffdf6c88e9087824069e42dd6d661793af90812871a50fcc3ca",
+    "size": 542962,
     "kind": "patch",
-    "published": "2026-06-27T19:49:44Z"
+    "published": "2026-06-29T18:56:01Z"
   },
   "full_client": {
     "version": null,
@@ -35,6 +35,36 @@
       "size": 247394,
       "kind": "patch",
       "published": "2026-06-27T19:49:44Z"
+    },
+    {
+      "version": "2026.06.29",
+      "counter": 2,
+      "filename": "ror-2026.06.29.zip",
+      "url": "https://funigithub.github.io/ror-patch/patch/main/ror-2026.06.29.zip",
+      "sha256": "5c542030a8fdab5b4dfc83f12a1ada4bf12881aaa925d79f6a4bc2ccfa4c6775",
+      "size": 897287,
+      "kind": "patch",
+      "published": "2026-06-29T14:08:21Z"
+    },
+    {
+      "version": "2026.06.29.1",
+      "counter": 3,
+      "filename": "ror-2026.06.29.1.zip",
+      "url": "https://funigithub.github.io/ror-patch/patch/main/ror-2026.06.29.1.zip",
+      "sha256": "765a1f371ddf62b757217273d94b2dabd986b3c7d7a3185b941de2459e5b5a7f",
+      "size": 897309,
+      "kind": "patch",
+      "published": "2026-06-29T14:11:08Z"
+    },
+    {
+      "version": "2026.06.29.2",
+      "counter": 4,
+      "filename": "ror-2026.06.29.2.zip",
+      "url": "https://funigithub.github.io/ror-patch/patch/main/ror-2026.06.29.2.zip",
+      "sha256": "d16718850ef40ffdf6c88e9087824069e42dd6d661793af90812871a50fcc3ca",
+      "size": 542962,
+      "kind": "patch",
+      "published": "2026-06-29T18:56:01Z"
     }
   ]
 }
